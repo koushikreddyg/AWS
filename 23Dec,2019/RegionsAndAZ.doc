@@ -1,0 +1,16 @@
+AWS has bunch of regions around the world
+Each Region has availability zones(AZ)
+Availability Zones(AZ) are physical data centers in a region, but they are seperated from other ones(isolated from disasters)
+Each AWS center(Region) is build around minimum of three data centers or availability zones(AZ)
+AWS consoles are region scoped(Except AWS and S3)
+AWS UI is scoped to a region and when action is performed, it is performed in specific region
+AZ are subset of region but they are not shown in the consoles
+Some Services pertains to region and some do not.
+
+Work in a region close to you
+
+REFER MAP (https://aws.amazon.com/about-aws/global-infrastructure/) to get the clear picture
+
+Four AWS Clouds Infrastructures (North America, South America, Asia Pacific, Europe Middle East Africa)
+Regions are the places like (ohio, Virginia) 
+AZ's are data centers

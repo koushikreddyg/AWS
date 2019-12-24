@@ -1,0 +1,30 @@
+IAM Service stands for Identity and Access Management
+Whole AWS Security is in IAM and has three types Users, Groups, Roles.
+Root account helps to create AWS accounts. Root account should be used only once and never be used or shared. Root account is account which has most power
+Users should be created with proper permissions
+IAM is center of AWS, every service is going to be helped with IAM for security
+IAM has policies which will be written in JSON format
+
+At High level IAM has Users(physical person), Users are grouped together in groups(group is what ever user wanted to be) and groups contain users. 
+Permissions are applied to groups and users in group inherit the permissions 
+Roles are for internal usage with in AWS resources and services(Eg: Applications), Roles are given to machines with in AWS resources and services.
+Policies are JSON document which defines of what Users, Groups and Roles can do or can not do
+
+IAM has a global view, when User, Group and Roles are created in AWS accounts it will be across all regions
+Policies are governed by JSON
+MFA(Multifactor authentication) will be setup
+IAM has predefined managed policies, So whole policies may not be rewritten, Amazon has existing policies that can be rewritten for ease of management
+It is better to give the user with minimum amount permissions they need to perform the jobs (least previleiged principles)
+
+IAM Federation helps the big enterprises to integrate their repository(Active directory) of users with IAM, which helps the users to login into AWS -
+      with company credentials
+
+IAM Federation(Identity Federation) uses SAML standard (for Example Microsoft Active directory is SAML Standard)
+
+
+Conclusion:
+One IAM user per physical person, donot share IAM user with any one
+One IAm Role per Application, each application has own life cycle, nothing shared.
+IAM credentials should never be shared
+Never, ever write the IAM credentials in code.
+Never use Root account for initial setup
